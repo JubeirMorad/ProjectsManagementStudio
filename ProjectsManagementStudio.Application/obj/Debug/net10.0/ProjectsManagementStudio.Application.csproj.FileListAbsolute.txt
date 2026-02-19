@@ -1,0 +1,15 @@
+D:\Programming\Projects\ProjectsManagementStudio\ProjectsManagementStudio.Application\bin\Debug\net10.0\ProjectsManagementStudio.Application.deps.json
+D:\Programming\Projects\ProjectsManagementStudio\ProjectsManagementStudio.Application\bin\Debug\net10.0\ProjectsManagementStudio.Application.dll
+D:\Programming\Projects\ProjectsManagementStudio\ProjectsManagementStudio.Application\bin\Debug\net10.0\ProjectsManagementStudio.Application.pdb
+D:\Programming\Projects\ProjectsManagementStudio\ProjectsManagementStudio.Application\obj\Debug\net10.0\ProjectsManagementStudio.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\Projects\ProjectsManagementStudio\ProjectsManagementStudio.Application\obj\Debug\net10.0\ProjectsManagementStudio.Application.AssemblyInfoInputs.cache
+D:\Programming\Projects\ProjectsManagementStudio\ProjectsManagementStudio.Application\obj\Debug\net10.0\ProjectsManagementStudio.Application.AssemblyInfo.cs
+D:\Programming\Projects\ProjectsManagementStudio\ProjectsManagementStudio.Application\obj\Debug\net10.0\ProjectsManagementStudio.Application.csproj.CoreCompileInputs.cache
+D:\Programming\Projects\ProjectsManagementStudio\ProjectsManagementStudio.Application\obj\Debug\net10.0\ProjectsManagementStudio.Application.dll
+D:\Programming\Projects\ProjectsManagementStudio\ProjectsManagementStudio.Application\obj\Debug\net10.0\refint\ProjectsManagementStudio.Application.dll
+D:\Programming\Projects\ProjectsManagementStudio\ProjectsManagementStudio.Application\obj\Debug\net10.0\ProjectsManagementStudio.Application.pdb
+D:\Programming\Projects\ProjectsManagementStudio\ProjectsManagementStudio.Application\obj\Debug\net10.0\ref\ProjectsManagementStudio.Application.dll
+D:\Programming\Projects\ProjectsManagementStudio\ProjectsManagementStudio.Application\bin\Debug\net10.0\ProjectsManagementStudio.Domain.dll
+D:\Programming\Projects\ProjectsManagementStudio\ProjectsManagementStudio.Application\bin\Debug\net10.0\ProjectsManagementStudio.Domain.pdb
+D:\Programming\Projects\ProjectsManagementStudio\ProjectsManagementStudio.Application\obj\Debug\net10.0\ProjectsManagementStudio.Application.csproj.AssemblyReference.cache
+D:\Programming\Projects\ProjectsManagementStudio\ProjectsManagementStudio.Application\obj\Debug\net10.0\Projects.52F798A0.Up2Date

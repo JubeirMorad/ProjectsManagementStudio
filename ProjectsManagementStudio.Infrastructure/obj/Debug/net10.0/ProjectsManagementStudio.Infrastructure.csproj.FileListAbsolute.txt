@@ -1,0 +1,17 @@
+D:\Programming\Projects\ProjectsManagementStudio\ProjectsManagementStudio.Infrastructure\bin\Debug\net10.0\ProjectsManagementStudio.Infrastructure.deps.json
+D:\Programming\Projects\ProjectsManagementStudio\ProjectsManagementStudio.Infrastructure\bin\Debug\net10.0\ProjectsManagementStudio.Infrastructure.dll
+D:\Programming\Projects\ProjectsManagementStudio\ProjectsManagementStudio.Infrastructure\bin\Debug\net10.0\ProjectsManagementStudio.Infrastructure.pdb
+D:\Programming\Projects\ProjectsManagementStudio\ProjectsManagementStudio.Infrastructure\obj\Debug\net10.0\ProjectsManagementStudio.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\Projects\ProjectsManagementStudio\ProjectsManagementStudio.Infrastructure\obj\Debug\net10.0\ProjectsManagementStudio.Infrastructure.AssemblyInfoInputs.cache
+D:\Programming\Projects\ProjectsManagementStudio\ProjectsManagementStudio.Infrastructure\obj\Debug\net10.0\ProjectsManagementStudio.Infrastructure.AssemblyInfo.cs
+D:\Programming\Projects\ProjectsManagementStudio\ProjectsManagementStudio.Infrastructure\obj\Debug\net10.0\ProjectsManagementStudio.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Programming\Projects\ProjectsManagementStudio\ProjectsManagementStudio.Infrastructure\obj\Debug\net10.0\ProjectsManagementStudio.Infrastructure.dll
+D:\Programming\Projects\ProjectsManagementStudio\ProjectsManagementStudio.Infrastructure\obj\Debug\net10.0\refint\ProjectsManagementStudio.Infrastructure.dll
+D:\Programming\Projects\ProjectsManagementStudio\ProjectsManagementStudio.Infrastructure\obj\Debug\net10.0\ProjectsManagementStudio.Infrastructure.pdb
+D:\Programming\Projects\ProjectsManagementStudio\ProjectsManagementStudio.Infrastructure\obj\Debug\net10.0\ref\ProjectsManagementStudio.Infrastructure.dll
+D:\Programming\Projects\ProjectsManagementStudio\ProjectsManagementStudio.Infrastructure\bin\Debug\net10.0\ProjectsManagementStudio.Application.dll
+D:\Programming\Projects\ProjectsManagementStudio\ProjectsManagementStudio.Infrastructure\bin\Debug\net10.0\ProjectsManagementStudio.Domain.dll
+D:\Programming\Projects\ProjectsManagementStudio\ProjectsManagementStudio.Infrastructure\bin\Debug\net10.0\ProjectsManagementStudio.Application.pdb
+D:\Programming\Projects\ProjectsManagementStudio\ProjectsManagementStudio.Infrastructure\bin\Debug\net10.0\ProjectsManagementStudio.Domain.pdb
+D:\Programming\Projects\ProjectsManagementStudio\ProjectsManagementStudio.Infrastructure\obj\Debug\net10.0\ProjectsManagementStudio.Infrastructure.csproj.AssemblyReference.cache
+D:\Programming\Projects\ProjectsManagementStudio\ProjectsManagementStudio.Infrastructure\obj\Debug\net10.0\Projects.2F8500C8.Up2Date
