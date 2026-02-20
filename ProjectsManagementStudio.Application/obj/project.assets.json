@@ -17,8 +17,8 @@
   "libraries": {
     "ProjectsManagementStudio.Domain/1.0.0": {
       "type": "project",
-      "path": "../ProjectsManagementStudio.Domain/ProjectsManagementStudio.Domain.csproj",
-      "msbuildProject": "../ProjectsManagementStudio.Domain/ProjectsManagementStudio.Domain.csproj"
+      "path": "../projectsmanagementstudio.domain/ProjectsManagementStudio.Domain.csproj",
+      "msbuildProject": "../projectsmanagementstudio.domain/ProjectsManagementStudio.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -33,11 +33,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Programming\\Projects\\ProjectsManagementStudio\\ProjectsManagementStudio.Application\\ProjectsManagementStudio.Application.csproj",
+      "projectUniqueName": "D:\\Programming\\Projects\\ProjectsManagementStudio\\projectsmanagementstudio.Application\\ProjectsManagementStudio.Application.csproj",
       "projectName": "ProjectsManagementStudio.Application",
-      "projectPath": "D:\\Programming\\Projects\\ProjectsManagementStudio\\ProjectsManagementStudio.Application\\ProjectsManagementStudio.Application.csproj",
+      "projectPath": "D:\\Programming\\Projects\\ProjectsManagementStudio\\projectsmanagementstudio.Application\\ProjectsManagementStudio.Application.csproj",
       "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "D:\\Programming\\Projects\\ProjectsManagementStudio\\ProjectsManagementStudio.Application\\obj\\",
+      "outputPath": "D:\\Programming\\Projects\\ProjectsManagementStudio\\projectsmanagementstudio.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Program Files\\Visual Studio\\NuGetPackages"
@@ -59,8 +59,8 @@
         "net10.0": {
           "targetAlias": "net10.0",
           "projectReferences": {
-            "D:\\Programming\\Projects\\ProjectsManagementStudio\\ProjectsManagementStudio.Domain\\ProjectsManagementStudio.Domain.csproj": {
-              "projectPath": "D:\\Programming\\Projects\\ProjectsManagementStudio\\ProjectsManagementStudio.Domain\\ProjectsManagementStudio.Domain.csproj"
+            "D:\\Programming\\Projects\\ProjectsManagementStudio\\projectsmanagementstudio.domain\\ProjectsManagementStudio.Domain.csproj": {
+              "projectPath": "D:\\Programming\\Projects\\ProjectsManagementStudio\\projectsmanagementstudio.domain\\ProjectsManagementStudio.Domain.csproj"
             }
           }
         }

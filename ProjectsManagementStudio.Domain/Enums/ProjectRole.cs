@@ -1,9 +1,9 @@
 ﻿namespace ProjectsManagementStudio.Domain;
 
-public enum ProjectRole
+public enum ProjectRole : byte
 {
-    Developer = 1,
-    ProjectManager = 2,
-    Admin = 3,
+    Developer = 0 ,
+    ProjectManager = 1,
+    Admin = 2,
     
 }

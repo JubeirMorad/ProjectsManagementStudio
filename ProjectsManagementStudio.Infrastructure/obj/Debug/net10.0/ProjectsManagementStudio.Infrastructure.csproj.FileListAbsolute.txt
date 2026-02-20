@@ -16,3 +16,5 @@ D:\Programming\Projects\ProjectsManagementStudio\ProjectsManagementStudio.Infras
 D:\Programming\Projects\ProjectsManagementStudio\ProjectsManagementStudio.Infrastructure\obj\Debug\net10.0\ProjectsManagementStudio.Infrastructure.csproj.AssemblyReference.cache
 D:\Programming\Projects\ProjectsManagementStudio\ProjectsManagementStudio.Infrastructure\obj\Debug\net10.0\Projects.2F8500C8.Up2Date
 D:\Programming\Projects\ProjectsManagementStudio\ProjectsManagementStudio.Infrastructure\obj\Debug\net10.0\ProjectsManagementStudio.Infrastructure.sourcelink.json
+D:\Programming\Projects\ProjectsManagementStudio\ProjectsManagementStudio.Infrastructure\bin\Debug\net10.0\ProjectsManagementStudio.Infrastructure.runtimeconfig.json
+D:\Programming\Projects\ProjectsManagementStudio\ProjectsManagementStudio.Infrastructure\obj\Debug\net10.0\ProjectsManagementStudio.Infrastructure.genruntimeconfig.cache

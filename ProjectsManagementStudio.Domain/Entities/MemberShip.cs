@@ -11,8 +11,8 @@ public class MemberShip
 
     //
     [ForeignKey(nameof(Project))]
-    public Project Project { get; private set; }
     public Guid ProjectId { get; private set; }
+    public Project Project { get; private set; }
 
     //
     [Required]

@@ -17,11 +17,7 @@ public class Project
     [Required, MaxLength(250)]
     public string Description { get; private set; } = string.Empty ;
 
-
-    [Required]
-    public Guid CreatedByUserId { get; private set; }
-
-
+    //
     [Required]
     public DateTime StartDate { get; private set; } = DateTime.Now ;
     public DateTime? EndDate { get; private set; }
@@ -42,12 +38,11 @@ public class Project
 
     public Project(){} // for EF Core
 
-    public Project(string name, string description,Guid createdByUserId, DateTime startDate)
+    public Project(string name, string description, DateTime startDate)
     {
         Id = Guid.NewGuid();
         Name = name;
         Description = description;
-        CreatedByUserId = createdByUserId;
         StartDate = startDate;
     }
 }

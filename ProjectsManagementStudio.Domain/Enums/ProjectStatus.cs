@@ -1,6 +1,6 @@
 ﻿namespace ProjectsManagementStudio.Domain;
 
-public enum ProjectStatus
+public enum ProjectStatus : byte
 {
     New = 0,
     InProgress = 1,
