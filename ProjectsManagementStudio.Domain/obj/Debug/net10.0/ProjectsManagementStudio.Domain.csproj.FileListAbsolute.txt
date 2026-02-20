@@ -9,3 +9,4 @@ D:\Programming\Projects\ProjectsManagementStudio\ProjectsManagementStudio.Domain
 D:\Programming\Projects\ProjectsManagementStudio\ProjectsManagementStudio.Domain\obj\Debug\net10.0\refint\ProjectsManagementStudio.Domain.dll
 D:\Programming\Projects\ProjectsManagementStudio\ProjectsManagementStudio.Domain\obj\Debug\net10.0\ProjectsManagementStudio.Domain.pdb
 D:\Programming\Projects\ProjectsManagementStudio\ProjectsManagementStudio.Domain\obj\Debug\net10.0\ref\ProjectsManagementStudio.Domain.dll
+D:\Programming\Projects\ProjectsManagementStudio\ProjectsManagementStudio.Domain\obj\Debug\net10.0\ProjectsManagementStudio.Domain.sourcelink.json

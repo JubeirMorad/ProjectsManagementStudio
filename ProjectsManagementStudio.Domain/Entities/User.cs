@@ -1,0 +1,53 @@
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace ProjectsManagementStudio.Domain;
+
+public class User
+{
+
+    [Key]
+    public Guid Id { get; private set; }
+
+
+    [Required, MaxLength(50)]
+    public string Name { get; private set; }
+
+
+    [Required, EmailAddress]
+    public string Email { get; private set; }
+    
+
+    [Required]
+    public string PasswordHash { get; private set; }
+
+    //
+    public ICollection<TaskItem>? AssignedTasks { get; private set; } = new HashSet<TaskItem>();
+
+    //
+    public ICollection<MemberShip>? MemberShips { get; private set; } = new HashSet<MemberShip>();
+
+    public User(){} // for EF Core
+
+    public User(string name, string email, string passwordHash)
+    {
+        if (string.IsNullOrWhiteSpace(name))
+            throw new ArgumentException("Name cannot be empty.", nameof(name));
+
+        else if (string.IsNullOrWhiteSpace(email))
+            throw new ArgumentException("Email cannot be empty.", nameof(email));
+
+        else if (string.IsNullOrWhiteSpace(passwordHash))
+            throw new ArgumentException("Password hash cannot be empty.", nameof(passwordHash));
+
+        else
+        {
+            
+            Id = Guid.NewGuid();
+            Name = name;
+            Email = email;
+            PasswordHash = passwordHash;
+    
+        }
+    }
+
+}

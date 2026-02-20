@@ -37,3 +37,4 @@ D:\Programming\Projects\ProjectsManagementStudio\ProjectsManagementStudio.API\bi
 D:\Programming\Projects\ProjectsManagementStudio\ProjectsManagementStudio.API\bin\Debug\net10.0\ProjectsManagementStudio.Infrastructure.pdb
 D:\Programming\Projects\ProjectsManagementStudio\ProjectsManagementStudio.API\bin\Debug\net10.0\ProjectsManagementStudio.Application.pdb
 D:\Programming\Projects\ProjectsManagementStudio\ProjectsManagementStudio.API\bin\Debug\net10.0\ProjectsManagementStudio.Domain.pdb
+D:\Programming\Projects\ProjectsManagementStudio\ProjectsManagementStudio.API\obj\Debug\net10.0\ProjectsManagementStudio.API.sourcelink.json
