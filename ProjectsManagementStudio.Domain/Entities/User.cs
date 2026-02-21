@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ProjectsManagementStudio.Domain;
 
@@ -13,11 +14,11 @@ public class User
     public string Name { get; private set; }
 
 
-    [Required, EmailAddress]
+    [Required, EmailAddress, MaxLength(255)]
     public string Email { get; private set; }
     
 
-    [Required]
+    [Required, Column(TypeName = "nvarchar(255)")]
     public string PasswordHash { get; private set; }
 
     //

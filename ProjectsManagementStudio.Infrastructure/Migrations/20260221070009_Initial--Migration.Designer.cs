@@ -12,8 +12,8 @@ using ProjectsManagementStudio.Infrastructure;
 namespace ProjectsManagementStudio.Infrastructure.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20260220212914_Initial_Migration")]
-    partial class Initial_Migration
+    [Migration("20260221070009_Initial--Migration")]
+    partial class InitialMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -33,8 +33,8 @@ namespace ProjectsManagementStudio.Infrastructure.Migrations
                     b.Property<Guid>("ProjectId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<int>("Role")
-                        .HasColumnType("int");
+                    b.Property<byte>("Role")
+                        .HasColumnType("tinyint");
 
                     b.HasKey("UserId", "ProjectId");
 
@@ -49,13 +49,10 @@ namespace ProjectsManagementStudio.Infrastructure.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("CreatedByUserId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<string>("Description")
                         .IsRequired()
-                        .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
+                        .HasMaxLength(300)
+                        .HasColumnType("nvarchar(300)");
 
                     b.Property<DateTime?>("EndDate")
                         .HasColumnType("datetime2");
@@ -68,8 +65,8 @@ namespace ProjectsManagementStudio.Infrastructure.Migrations
                     b.Property<DateTime>("StartDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("Status")
-                        .HasColumnType("int");
+                    b.Property<byte>("Status")
+                        .HasColumnType("tinyint");
 
                     b.HasKey("Id");
 
@@ -87,14 +84,14 @@ namespace ProjectsManagementStudio.Infrastructure.Migrations
 
                     b.Property<string>("Description")
                         .IsRequired()
-                        .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
+                        .HasMaxLength(300)
+                        .HasColumnType("nvarchar(300)");
 
                     b.Property<Guid>("ProjectId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<int>("Status")
-                        .HasColumnType("int");
+                    b.Property<byte>("Status")
+                        .HasColumnType("tinyint");
 
                     b.Property<string>("Title")
                         .IsRequired()
@@ -118,7 +115,8 @@ namespace ProjectsManagementStudio.Infrastructure.Migrations
 
                     b.Property<string>("Email")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -127,7 +125,7 @@ namespace ProjectsManagementStudio.Infrastructure.Migrations
 
                     b.Property<string>("PasswordHash")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(255)");
 
                     b.HasKey("Id");
 
@@ -157,7 +155,8 @@ namespace ProjectsManagementStudio.Infrastructure.Migrations
                 {
                     b.HasOne("ProjectsManagementStudio.Domain.User", "AssignedToUser")
                         .WithMany("AssignedTasks")
-                        .HasForeignKey("AssignedToUserId");
+                        .HasForeignKey("AssignedToUserId")
+                        .OnDelete(DeleteBehavior.SetNull);
 
                     b.HasOne("ProjectsManagementStudio.Domain.Project", "Project")
                         .WithMany("Tasks")

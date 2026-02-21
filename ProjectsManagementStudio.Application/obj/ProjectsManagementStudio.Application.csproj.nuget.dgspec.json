@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Programming\\Projects\\ProjectsManagementStudio\\projectsmanagementstudio.Application\\ProjectsManagementStudio.Application.csproj": {}
+    "D:\\Programming\\Projects\\ProjectsManagementStudio\\ProjectsManagementStudio.Application\\ProjectsManagementStudio.Application.csproj": {}
   },
   "projects": {
-    "D:\\Programming\\Projects\\ProjectsManagementStudio\\projectsmanagementstudio.Application\\ProjectsManagementStudio.Application.csproj": {
+    "D:\\Programming\\Projects\\ProjectsManagementStudio\\ProjectsManagementStudio.Application\\ProjectsManagementStudio.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Programming\\Projects\\ProjectsManagementStudio\\projectsmanagementstudio.Application\\ProjectsManagementStudio.Application.csproj",
+        "projectUniqueName": "D:\\Programming\\Projects\\ProjectsManagementStudio\\ProjectsManagementStudio.Application\\ProjectsManagementStudio.Application.csproj",
         "projectName": "ProjectsManagementStudio.Application",
-        "projectPath": "D:\\Programming\\Projects\\ProjectsManagementStudio\\projectsmanagementstudio.Application\\ProjectsManagementStudio.Application.csproj",
+        "projectPath": "D:\\Programming\\Projects\\ProjectsManagementStudio\\ProjectsManagementStudio.Application\\ProjectsManagementStudio.Application.csproj",
         "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "D:\\Programming\\Projects\\ProjectsManagementStudio\\projectsmanagementstudio.Application\\obj\\",
+        "outputPath": "D:\\Programming\\Projects\\ProjectsManagementStudio\\ProjectsManagementStudio.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Program Files\\Visual Studio\\NuGetPackages"

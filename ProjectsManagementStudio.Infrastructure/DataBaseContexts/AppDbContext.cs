@@ -20,5 +20,15 @@ public class AppDbContext : DbContext
         // Configure relationships and constraints if needed
         modelBuilder.Entity<Domain.MemberShip>()
             .HasKey(ms => new { ms.UserId, ms.ProjectId }); // Composite key for many-to-many relationship
+
+
+        // On Delete User set UserId null -- TaskItem
+        modelBuilder.Entity<Domain.TaskItem>()
+            .HasOne( t => t.AssignedToUser)
+            .WithMany( u => u.AssignedTasks)
+            .HasForeignKey(t => t.AssignedToUserId)
+            .OnDelete(DeleteBehavior.SetNull);
+            
+            
     }
 }

@@ -14,7 +14,7 @@ public class Project
     public string Name { get; private set; } = string.Empty ;
 
 
-    [Required, MaxLength(250)]
+    [Required, MaxLength(300)]
     public string Description { get; private set; } = string.Empty ;
 
     //

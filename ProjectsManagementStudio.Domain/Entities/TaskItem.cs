@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ProjectsManagementStudio.Domain;
-
+ 
 public class TaskItem
 {
     [Key]
@@ -13,7 +13,7 @@ public class TaskItem
     public string Title { get; private set; } = string.Empty ;
 
 
-    [Required, MaxLength(250)]
+    [Required, MaxLength(300)]
     public string Description { get; private set; } = string.Empty ;
     
 
