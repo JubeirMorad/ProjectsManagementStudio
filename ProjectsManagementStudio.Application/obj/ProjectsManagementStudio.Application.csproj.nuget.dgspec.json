@@ -33,8 +33,8 @@
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "D:\\Programming\\Projects\\ProjectsManagementStudio\\projectsmanagementstudio.domain\\ProjectsManagementStudio.Domain.csproj": {
-                "projectPath": "D:\\Programming\\Projects\\ProjectsManagementStudio\\projectsmanagementstudio.domain\\ProjectsManagementStudio.Domain.csproj"
+              "D:\\Programming\\Projects\\ProjectsManagementStudio\\ProjectsManagementStudio.Domain\\ProjectsManagementStudio.Domain.csproj": {
+                "projectPath": "D:\\Programming\\Projects\\ProjectsManagementStudio\\ProjectsManagementStudio.Domain\\ProjectsManagementStudio.Domain.csproj"
               }
             }
           }
@@ -348,14 +348,14 @@
         }
       }
     },
-    "D:\\Programming\\Projects\\ProjectsManagementStudio\\projectsmanagementstudio.domain\\ProjectsManagementStudio.Domain.csproj": {
+    "D:\\Programming\\Projects\\ProjectsManagementStudio\\ProjectsManagementStudio.Domain\\ProjectsManagementStudio.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Programming\\Projects\\ProjectsManagementStudio\\projectsmanagementstudio.domain\\ProjectsManagementStudio.Domain.csproj",
+        "projectUniqueName": "D:\\Programming\\Projects\\ProjectsManagementStudio\\ProjectsManagementStudio.Domain\\ProjectsManagementStudio.Domain.csproj",
         "projectName": "ProjectsManagementStudio.Domain",
-        "projectPath": "D:\\Programming\\Projects\\ProjectsManagementStudio\\projectsmanagementstudio.domain\\ProjectsManagementStudio.Domain.csproj",
+        "projectPath": "D:\\Programming\\Projects\\ProjectsManagementStudio\\ProjectsManagementStudio.Domain\\ProjectsManagementStudio.Domain.csproj",
         "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "D:\\Programming\\Projects\\ProjectsManagementStudio\\projectsmanagementstudio.domain\\obj\\",
+        "outputPath": "D:\\Programming\\Projects\\ProjectsManagementStudio\\ProjectsManagementStudio.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Program Files\\Visual Studio\\NuGetPackages"

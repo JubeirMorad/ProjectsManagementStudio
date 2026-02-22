@@ -16,23 +16,31 @@ public class MemberShip
 
     //
     [Required]
-    public ProjectRole Role { get; private set; }
+    public ProjectRole Role { get; set; }
 
     //
-    public MemberShip(){} // for EF Core
-    
+    private MemberShip() { } // for EF Core
+
     public MemberShip(Guid userId, Guid projectId, ProjectRole role)
     {
         if (userId == Guid.Empty)
             throw new ArgumentException("User ID cannot be empty.", nameof(userId));
-            
-        else if (projectId == Guid.Empty)
+
+        if (projectId == Guid.Empty)
             throw new ArgumentException("Project ID cannot be empty.", nameof(projectId));
-        else
-        {
-            UserId = userId;
-            ProjectId = projectId;
-            Role = role;
-        }
+
+        UserId = userId;
+        ProjectId = projectId;
+        Role = role;
+
+    }
+
+    //
+    public void SetUser(Guid userId)
+    {
+        if (userId == Guid.Empty)
+            throw new ArgumentException("User ID cannot be empty.", nameof(userId));
+
+        this.UserId = userId;
     }
 }

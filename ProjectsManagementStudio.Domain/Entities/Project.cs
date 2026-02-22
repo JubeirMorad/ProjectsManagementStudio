@@ -1,5 +1,4 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using System.Linq.Expressions;
 
 namespace ProjectsManagementStudio.Domain;
 
@@ -10,22 +9,22 @@ public class Project
     public Guid Id { get; private set; }
 
 
-    [Required, MaxLength(50)]
-    public string Name { get; private set; } = string.Empty ;
+    [Required, MaxLength(50, ErrorMessage = "Name length cannot be > 50.")]
+    public string Name { get; private set; }
 
 
-    [Required, MaxLength(300)]
-    public string Description { get; private set; } = string.Empty ;
+    [Required, MaxLength(300, ErrorMessage = "Description length cannot be > 300.")]
+    public string Description { get; private set; }
 
     //
     [Required]
-    public DateTime StartDate { get; private set; } = DateTime.Now ;
+    public DateTime StartDate { get; private set; }
     public DateTime? EndDate { get; private set; }
 
 
     //
-    public ProjectStatus Status { get; private set; } = ProjectStatus.New;
-    
+    public ProjectStatus Status { get; private set; }
+
 
     //
     public ICollection<MemberShip>? MemberShips { get; private set; } = new HashSet<MemberShip>();
@@ -33,16 +32,58 @@ public class Project
 
     // 
     public ICollection<TaskItem>? Tasks { get; private set; } = new HashSet<TaskItem>();
-     
 
 
-    public Project(){} // for EF Core
 
-    public Project(string name, string description, DateTime startDate)
+    private Project() { } // for EF Core
+
+    public Project(string name, string description)
     {
+        if (string.IsNullOrWhiteSpace(name))
+            throw new ArgumentException("Name cannot be empty.", nameof(name));
+
+        if (string.IsNullOrWhiteSpace(description))
+            throw new ArgumentException("Description cannot be empty.", nameof(description));
+
         Id = Guid.NewGuid();
         Name = name;
         Description = description;
-        StartDate = startDate;
+        StartDate = DateTime.Now;
+        Status = ProjectStatus.New;
     }
+
+
+    //
+    public void MarkAsCompleted()
+    {
+        this.Status = ProjectStatus.Completed;
+        this.EndDate = DateTime.Now;
+    }
+
+    //
+    public void MarkAsInProgress()
+    {
+        this.Status = ProjectStatus.InProgress;
+    }
+
+
+    //
+    public void SetName(string name)
+    {
+        if (string.IsNullOrWhiteSpace(name))
+            throw new ArgumentException("Name cannot be empty.", nameof(name));
+
+        this.Name = name;
+    }
+
+    //
+    public void SetDescription(string description)
+    {
+        if (string.IsNullOrWhiteSpace(description))
+            throw new ArgumentException("Description cannot be empty.", nameof(description));
+
+        this.Description = description;
+    }
+
+
 }

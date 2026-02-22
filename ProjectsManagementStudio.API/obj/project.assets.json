@@ -3189,13 +3189,13 @@
     },
     "ProjectsManagementStudio.Domain/1.0.0": {
       "type": "project",
-      "path": "../projectsmanagementstudio.domain/ProjectsManagementStudio.Domain.csproj",
-      "msbuildProject": "../projectsmanagementstudio.domain/ProjectsManagementStudio.Domain.csproj"
+      "path": "../ProjectsManagementStudio.Domain/ProjectsManagementStudio.Domain.csproj",
+      "msbuildProject": "../ProjectsManagementStudio.Domain/ProjectsManagementStudio.Domain.csproj"
     },
     "ProjectsManagementStudio.Infrastructure/1.0.0": {
       "type": "project",
-      "path": "../projectsmanagementstudio.infrastructure/ProjectsManagementStudio.Infrastructure.csproj",
-      "msbuildProject": "../projectsmanagementstudio.infrastructure/ProjectsManagementStudio.Infrastructure.csproj"
+      "path": "../ProjectsManagementStudio.Infrastructure/ProjectsManagementStudio.Infrastructure.csproj",
+      "msbuildProject": "../ProjectsManagementStudio.Infrastructure/ProjectsManagementStudio.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -3216,11 +3216,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Programming\\Projects\\ProjectsManagementStudio\\projectsmanagementstudio.api\\ProjectsManagementStudio.API.csproj",
+      "projectUniqueName": "D:\\Programming\\Projects\\ProjectsManagementStudio\\ProjectsManagementStudio.API\\ProjectsManagementStudio.API.csproj",
       "projectName": "ProjectsManagementStudio.API",
-      "projectPath": "D:\\Programming\\Projects\\ProjectsManagementStudio\\projectsmanagementstudio.api\\ProjectsManagementStudio.API.csproj",
+      "projectPath": "D:\\Programming\\Projects\\ProjectsManagementStudio\\ProjectsManagementStudio.API\\ProjectsManagementStudio.API.csproj",
       "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "D:\\Programming\\Projects\\ProjectsManagementStudio\\projectsmanagementstudio.api\\obj\\",
+      "outputPath": "D:\\Programming\\Projects\\ProjectsManagementStudio\\ProjectsManagementStudio.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Program Files\\Visual Studio\\NuGetPackages"
@@ -3245,8 +3245,8 @@
             "D:\\Programming\\Projects\\ProjectsManagementStudio\\ProjectsManagementStudio.Application\\ProjectsManagementStudio.Application.csproj": {
               "projectPath": "D:\\Programming\\Projects\\ProjectsManagementStudio\\ProjectsManagementStudio.Application\\ProjectsManagementStudio.Application.csproj"
             },
-            "D:\\Programming\\Projects\\ProjectsManagementStudio\\projectsmanagementstudio.infrastructure\\ProjectsManagementStudio.Infrastructure.csproj": {
-              "projectPath": "D:\\Programming\\Projects\\ProjectsManagementStudio\\projectsmanagementstudio.infrastructure\\ProjectsManagementStudio.Infrastructure.csproj"
+            "D:\\Programming\\Projects\\ProjectsManagementStudio\\ProjectsManagementStudio.Infrastructure\\ProjectsManagementStudio.Infrastructure.csproj": {
+              "projectPath": "D:\\Programming\\Projects\\ProjectsManagementStudio\\ProjectsManagementStudio.Infrastructure\\ProjectsManagementStudio.Infrastructure.csproj"
             }
           }
         }

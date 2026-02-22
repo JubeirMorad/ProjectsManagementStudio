@@ -1,6 +1,6 @@
 ﻿namespace ProjectsManagementStudio.Domain;
 
-public enum TaskStatus : byte
+public enum TaskItemStatus : byte
 {
     ToDo = 0,
     InProgress = 1,

@@ -2,25 +2,25 @@
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ProjectsManagementStudio.Domain;
- 
+
 public class TaskItem
 {
     [Key]
     public Guid Id { get; private set; }
 
 
-    [Required, MaxLength(50)]
-    public string Title { get; private set; } = string.Empty ;
+    [Required, MaxLength(50 , ErrorMessage = "Name length cannot be > 50.")]
+    public string Title { get; private set; }
 
 
-    [Required, MaxLength(300)]
-    public string Description { get; private set; } = string.Empty ;
-    
+    [Required, MaxLength(300, ErrorMessage = "Description length cannot be > 300.")]
+    public string Description { get; private set; }
+
 
     //
     [Required]
-    public TaskStatus Status { get; private set; } = TaskStatus.ToDo;
-    
+    public TaskItemStatus Status { get; private set; }
+
 
     //
     [ForeignKey(nameof(AssignedToUser))]
@@ -34,7 +34,7 @@ public class TaskItem
     public Project Project { get; private set; }
 
 
-    public TaskItem(){} // for EF Core
+    private TaskItem() { } // for EF Core
 
 
     public TaskItem(string title, string description, Guid assignedToUserId, Guid projectId)
@@ -42,22 +42,64 @@ public class TaskItem
         if (string.IsNullOrWhiteSpace(title))
             throw new ArgumentException("Title cannot be empty.", nameof(title));
 
-        else if (string.IsNullOrWhiteSpace(description))
+        if (string.IsNullOrWhiteSpace(description))
             throw new ArgumentException("Description cannot be empty.", nameof(description));
 
-        else if (assignedToUserId == Guid.Empty)
+        if (assignedToUserId == Guid.Empty)
             throw new ArgumentException("AssignedToUserId cannot be empty.", nameof(assignedToUserId));
 
-        else if (projectId == Guid.Empty)
+        if (projectId == Guid.Empty)
             throw new ArgumentException("ProjectId cannot be empty.", nameof(projectId));
 
-        else
-        {
-            Id = Guid.NewGuid();
-            Title = title;
-            Description = description;
-            AssignedToUserId = assignedToUserId;
-            ProjectId = projectId;
-        }
+
+        Id = Guid.NewGuid();
+        Title = title;
+        Description = description;
+        AssignedToUserId = assignedToUserId;
+        ProjectId = projectId;
+        Status = TaskItemStatus.ToDo;
+
+    }
+
+
+    //
+    public void SetName(string title)
+    {
+        if (string.IsNullOrWhiteSpace(title))
+            throw new ArgumentException("Name cannot be empty.", nameof(title));
+
+        this.Title = title;
+    }
+
+    //
+    public void SetDescription(string description)
+    {
+        if (string.IsNullOrWhiteSpace(description))
+            throw new ArgumentException("Description cannot be empty.", nameof(description));
+
+        this.Description = description;
+    }
+
+    //
+    public void SetStatusAsDone()
+    {
+        if (this.Status == TaskItemStatus.InProgress)
+            this.Status = TaskItemStatus.Done;
+    }
+
+    //
+    public void SetStatusAsInProgress()
+    {
+        if (this.Status == TaskItemStatus.ToDo)
+            this.Status = TaskItemStatus.InProgress;
+    }
+
+    //
+    public void AssignToUser(Guid userId)
+    {
+        if (userId == Guid.Empty)
+            throw new ArgumentException("User ID cannot be empty.", nameof(userId));
+
+        this.AssignedToUserId = userId;
     }
 }
