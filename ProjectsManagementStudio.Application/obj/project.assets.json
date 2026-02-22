@@ -17,8 +17,8 @@
   "libraries": {
     "ProjectsManagementStudio.Domain/1.0.0": {
       "type": "project",
-      "path": "../ProjectsManagementStudio.Domain/ProjectsManagementStudio.Domain.csproj",
-      "msbuildProject": "../ProjectsManagementStudio.Domain/ProjectsManagementStudio.Domain.csproj"
+      "path": "../projectsmanagementstudio.domain/ProjectsManagementStudio.Domain.csproj",
+      "msbuildProject": "../projectsmanagementstudio.domain/ProjectsManagementStudio.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -59,8 +59,8 @@
         "net10.0": {
           "targetAlias": "net10.0",
           "projectReferences": {
-            "D:\\Programming\\Projects\\ProjectsManagementStudio\\ProjectsManagementStudio.Domain\\ProjectsManagementStudio.Domain.csproj": {
-              "projectPath": "D:\\Programming\\Projects\\ProjectsManagementStudio\\ProjectsManagementStudio.Domain\\ProjectsManagementStudio.Domain.csproj"
+            "D:\\Programming\\Projects\\ProjectsManagementStudio\\projectsmanagementstudio.domain\\ProjectsManagementStudio.Domain.csproj": {
+              "projectPath": "D:\\Programming\\Projects\\ProjectsManagementStudio\\projectsmanagementstudio.domain\\ProjectsManagementStudio.Domain.csproj"
             }
           }
         }

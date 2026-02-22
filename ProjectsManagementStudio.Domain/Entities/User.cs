@@ -7,23 +7,23 @@ public class User
 {
 
     [Key]
-    public Guid Id {get; private set;}
+    public Guid Id { get; private set; }
 
 
-    [Required, MaxLength(50, ErrorMessage = "Email length cannot be > 50.")]
-    public string Name { get;  set; }
+    [Required , MaxLength(50)]
+    public string Name { get; set; }
 
 
-    [Required, EmailAddress(ErrorMessage = "Email Adress is not valid."), MaxLength(255, ErrorMessage = "Email length cannot be > 255.")]
-    public string Email { get;  set; }
+    [Required, MaxLength(255)]
+    public string Email { get; set; }
 
 
     [Required]
-    public UserRole Role { get; private set; } = UserRole.User ; 
+    public UserRole Role { get; private set; } = UserRole.User;
 
 
     [Required, Column(TypeName = "nvarchar(255)")]
-    public string PasswordHash {get; private set;}
+    public string PasswordHash { get; private set; }
 
     //
     public ICollection<TaskItem>? AssignedTasks { get; private set; } = new HashSet<TaskItem>();
@@ -31,9 +31,9 @@ public class User
     //
     public ICollection<MemberShip>? MemberShips { get; private set; } = new HashSet<MemberShip>();
 
-    private User(){} // for EF Core
+    private User() { } // for EF Core
 
-    public User(string name, string email, string passwordHash)
+    public User(string name, string email, string password)
     {
         if (string.IsNullOrWhiteSpace(name))
             throw new ArgumentException("Name cannot be empty.", nameof(name));
@@ -41,14 +41,13 @@ public class User
         if (string.IsNullOrWhiteSpace(email))
             throw new ArgumentException("Email cannot be empty.", nameof(email));
 
-        if (string.IsNullOrWhiteSpace(passwordHash))
-            throw new ArgumentException("Password hash cannot be empty.", nameof(passwordHash));
-  
+        if (string.IsNullOrWhiteSpace(password))
+            throw new ArgumentException("Password hash cannot be empty.", nameof(password));
+
         Id = Guid.NewGuid();
         Name = name;
         Email = email;
-        PasswordHash = passwordHash;
-    
+        PasswordHash = HashPassword(password);
     }
 
     //
@@ -58,6 +57,11 @@ public class User
             throw new ArgumentException("New password hash cannot be empty.", nameof(newPasswordHash));
 
         PasswordHash = newPasswordHash;
+    }
+
+    private string HashPassword(string password)
+    {
+        return password;
     }
 
 }
