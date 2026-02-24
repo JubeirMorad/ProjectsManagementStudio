@@ -3,5 +3,6 @@
 public enum UserRole : byte
 {
     User = 0,
-    Admin = 1
+    Manager = 1,
+    CEO = 2,
 }

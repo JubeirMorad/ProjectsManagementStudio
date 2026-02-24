@@ -9,11 +9,11 @@ public class Project
     public Guid Id { get; private set; }
 
 
-    [Required, MaxLength(50, ErrorMessage = "Name length cannot be > 50.")]
+    [Required, MaxLength(50)]
     public string Name { get; private set; }
 
 
-    [Required, MaxLength(300, ErrorMessage = "Description length cannot be > 300.")]
+    [Required, MaxLength(300)]
     public string Description { get; private set; }
 
     //
@@ -45,11 +45,11 @@ public class Project
         if (string.IsNullOrWhiteSpace(description))
             throw new ArgumentException("Description cannot be empty.", nameof(description));
 
-        Id = Guid.NewGuid();
-        Name = name;
-        Description = description;
-        StartDate = DateTime.Now;
-        Status = ProjectStatus.New;
+        this.Id = Guid.NewGuid();
+        this.Name = name;
+        this.Description = description;
+        this.StartDate = DateTime.Now;
+        this.Status = ProjectStatus.New;
     }
 
 

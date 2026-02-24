@@ -33,7 +33,7 @@ public class User
 
     private User() { } // for EF Core
 
-    public User(string name, string email, string password)
+    public User(string name, string email, string passwordHash)
     {
         if (string.IsNullOrWhiteSpace(name))
             throw new ArgumentException("Name cannot be empty.", nameof(name));
@@ -41,13 +41,13 @@ public class User
         if (string.IsNullOrWhiteSpace(email))
             throw new ArgumentException("Email cannot be empty.", nameof(email));
 
-        if (string.IsNullOrWhiteSpace(password))
-            throw new ArgumentException("Password hash cannot be empty.", nameof(password));
+        if (string.IsNullOrWhiteSpace(passwordHash))
+            throw new ArgumentException("Password hash cannot be empty.", nameof(passwordHash));
 
         Id = Guid.NewGuid();
         Name = name;
         Email = email;
-        PasswordHash = HashPassword(password);
+        PasswordHash = passwordHash;
     }
 
     //
@@ -59,9 +59,5 @@ public class User
         PasswordHash = newPasswordHash;
     }
 
-    private string HashPassword(string password)
-    {
-        return password;
-    }
 
 }

@@ -3184,18 +3184,18 @@
     },
     "ProjectsManagementStudio.Application/1.0.0": {
       "type": "project",
-      "path": "../projectsmanagementstudio.Application/ProjectsManagementStudio.Application.csproj",
-      "msbuildProject": "../projectsmanagementstudio.Application/ProjectsManagementStudio.Application.csproj"
+      "path": "../ProjectsManagementStudio.Application/ProjectsManagementStudio.Application.csproj",
+      "msbuildProject": "../ProjectsManagementStudio.Application/ProjectsManagementStudio.Application.csproj"
     },
     "ProjectsManagementStudio.Domain/1.0.0": {
       "type": "project",
-      "path": "../projectsmanagementstudio.domain/ProjectsManagementStudio.Domain.csproj",
-      "msbuildProject": "../projectsmanagementstudio.domain/ProjectsManagementStudio.Domain.csproj"
+      "path": "../ProjectsManagementStudio.Domain/ProjectsManagementStudio.Domain.csproj",
+      "msbuildProject": "../ProjectsManagementStudio.Domain/ProjectsManagementStudio.Domain.csproj"
     },
     "ProjectsManagementStudio.Infrastructure/1.0.0": {
       "type": "project",
-      "path": "../projectsmanagementstudio.infrastructure/ProjectsManagementStudio.Infrastructure.csproj",
-      "msbuildProject": "../projectsmanagementstudio.infrastructure/ProjectsManagementStudio.Infrastructure.csproj"
+      "path": "../ProjectsManagementStudio.Infrastructure/ProjectsManagementStudio.Infrastructure.csproj",
+      "msbuildProject": "../ProjectsManagementStudio.Infrastructure/ProjectsManagementStudio.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -3242,11 +3242,11 @@
         "net10.0": {
           "targetAlias": "net10.0",
           "projectReferences": {
-            "D:\\Programming\\Projects\\ProjectsManagementStudio\\projectsmanagementstudio.Application\\ProjectsManagementStudio.Application.csproj": {
-              "projectPath": "D:\\Programming\\Projects\\ProjectsManagementStudio\\projectsmanagementstudio.Application\\ProjectsManagementStudio.Application.csproj"
+            "D:\\Programming\\Projects\\ProjectsManagementStudio\\ProjectsManagementStudio.Application\\ProjectsManagementStudio.Application.csproj": {
+              "projectPath": "D:\\Programming\\Projects\\ProjectsManagementStudio\\ProjectsManagementStudio.Application\\ProjectsManagementStudio.Application.csproj"
             },
-            "D:\\Programming\\Projects\\ProjectsManagementStudio\\projectsmanagementstudio.infrastructure\\ProjectsManagementStudio.Infrastructure.csproj": {
-              "projectPath": "D:\\Programming\\Projects\\ProjectsManagementStudio\\projectsmanagementstudio.infrastructure\\ProjectsManagementStudio.Infrastructure.csproj"
+            "D:\\Programming\\Projects\\ProjectsManagementStudio\\ProjectsManagementStudio.Infrastructure\\ProjectsManagementStudio.Infrastructure.csproj": {
+              "projectPath": "D:\\Programming\\Projects\\ProjectsManagementStudio\\ProjectsManagementStudio.Infrastructure\\ProjectsManagementStudio.Infrastructure.csproj"
             }
           }
         }

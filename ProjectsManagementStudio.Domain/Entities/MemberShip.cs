@@ -35,12 +35,5 @@ public class MemberShip
 
     }
 
-    //
-    public void SetUser(Guid userId)
-    {
-        if (userId == Guid.Empty)
-            throw new ArgumentException("User ID cannot be empty.", nameof(userId));
-
-        this.UserId = userId;
-    }
+    
 }
