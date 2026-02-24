@@ -53,37 +53,4 @@ public class Project
     }
 
 
-    //
-    public void MarkAsCompleted()
-    {
-        this.Status = ProjectStatus.Completed;
-        this.EndDate = DateTime.Now;
-    }
-
-    //
-    public void MarkAsInProgress()
-    {
-        this.Status = ProjectStatus.InProgress;
-    }
-
-
-    //
-    public void SetName(string name)
-    {
-        if (string.IsNullOrWhiteSpace(name))
-            throw new ArgumentException("Name cannot be empty.", nameof(name));
-
-        this.Name = name;
-    }
-
-    //
-    public void SetDescription(string description)
-    {
-        if (string.IsNullOrWhiteSpace(description))
-            throw new ArgumentException("Description cannot be empty.", nameof(description));
-
-        this.Description = description;
-    }
-
-
 }

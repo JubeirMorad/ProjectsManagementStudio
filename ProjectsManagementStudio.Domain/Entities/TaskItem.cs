@@ -62,44 +62,4 @@ public class TaskItem
     }
 
 
-    //
-    public void SetName(string title)
-    {
-        if (string.IsNullOrWhiteSpace(title))
-            throw new ArgumentException("Name cannot be empty.", nameof(title));
-
-        this.Title = title;
-    }
-
-    //
-    public void SetDescription(string description)
-    {
-        if (string.IsNullOrWhiteSpace(description))
-            throw new ArgumentException("Description cannot be empty.", nameof(description));
-
-        this.Description = description;
-    }
-
-    //
-    public void SetStatusAsDone()
-    {
-        if (this.Status == TaskItemStatus.InProgress)
-            this.Status = TaskItemStatus.Done;
-    }
-
-    //
-    public void SetStatusAsInProgress()
-    {
-        if (this.Status == TaskItemStatus.ToDo)
-            this.Status = TaskItemStatus.InProgress;
-    }
-
-    //
-    public void AssignToUser(Guid userId)
-    {
-        if (userId == Guid.Empty)
-            throw new ArgumentException("User ID cannot be empty.", nameof(userId));
-
-        this.AssignedToUserId = userId;
-    }
 }

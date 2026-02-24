@@ -50,14 +50,4 @@ public class User
         PasswordHash = passwordHash;
     }
 
-    //
-    public void SetPasswordHash(string newPasswordHash)
-    {
-        if (string.IsNullOrWhiteSpace(newPasswordHash))
-            throw new ArgumentException("New password hash cannot be empty.", nameof(newPasswordHash));
-
-        PasswordHash = newPasswordHash;
-    }
-
-
 }

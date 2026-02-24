@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace ProjectsManagementStudio.Application.Persistence
 {
-    public interface IUserRepository
+    public class ITaskRepository
     {
         
     }
