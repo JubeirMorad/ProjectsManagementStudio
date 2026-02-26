@@ -1,6 +1,6 @@
 ﻿using ProjectsManagementStudio.Domain;
 
-namespace ProjectsManagementStudio.Application
+namespace ProjectsManagementStudio.Application.Features
 {
     public record GetTaskByIdQuery
     (

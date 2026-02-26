@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using ProjectsManagementStudio.Domain;
 
-namespace ProjectsManagementStudio.Application.Features.Users
+namespace ProjectsManagementStudio.Application.Features
 {
     public record GetUserByIdQuery
     (

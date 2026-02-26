@@ -1,7 +1,7 @@
 
 using ProjectsManagementStudio.Domain;
 
-namespace ProjectsManagementStudio.Application.Features.Tasks.Responses
+namespace ProjectsManagementStudio.Application.Features
 {
     public record TaskResponse
     (

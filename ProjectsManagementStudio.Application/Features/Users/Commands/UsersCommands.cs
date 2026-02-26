@@ -5,7 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using ProjectsManagementStudio.Domain;
 
-namespace ProjectsManagementStudio.Application.Features.Users
+namespace ProjectsManagementStudio.Application.Features
 {
 
     public record LoginUserCommand(
