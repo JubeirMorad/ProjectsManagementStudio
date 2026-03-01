@@ -29,7 +29,6 @@ namespace ProjectsManagementStudio.Application.Features
     );
 
 
-
     public record GetAllProjectsQuery();
 
 

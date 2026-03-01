@@ -1,12 +1,11 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+
+using System.Transactions;
+using ProjectsManagementStudio.Domain;
 
 namespace ProjectsManagementStudio.Application.Persistence
 {
-    public class ITaskRepository
+    public interface ITaskRepository
     {
-        
+
     }
 }

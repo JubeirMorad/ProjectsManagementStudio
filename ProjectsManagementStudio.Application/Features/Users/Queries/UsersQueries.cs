@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using ProjectsManagementStudio.Domain;
 
 namespace ProjectsManagementStudio.Application.Features
-{
+{ 
     public record GetUserByIdQuery
     (
         [Required]
