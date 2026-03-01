@@ -20,6 +20,7 @@ namespace ProjectsManagementStudio.Application.Features
 
     public record DeleteMemberShipCommand
     (
-        Guid Id
+        Guid ProjectId,
+        Guid UserId
     );
 }
