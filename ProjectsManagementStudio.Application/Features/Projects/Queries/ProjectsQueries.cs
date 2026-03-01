@@ -23,11 +23,6 @@ namespace ProjectsManagementStudio.Application.Features
 
 
 
-    public record GetProjectByMembershipIdQuery
-    (
-        Guid MembershipId
-    );
-
 
     public record GetAllProjectsQuery();
 
