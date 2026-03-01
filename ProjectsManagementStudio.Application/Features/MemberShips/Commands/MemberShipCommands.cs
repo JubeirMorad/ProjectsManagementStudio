@@ -15,8 +15,7 @@ namespace ProjectsManagementStudio.Application.Features
     public record UpdateMemberShipCommand
     (
         Guid Id,
-        Guid UserId,
-        ProjectRole Role
+        Guid UserId
     );
 
     public record DeleteMemberShipCommand
