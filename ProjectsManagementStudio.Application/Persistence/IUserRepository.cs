@@ -24,11 +24,11 @@ namespace ProjectsManagementStudio.Application.Persistence
         //
         //
         // Commands //
-        Task AddUserAsync(User user);
+        Task<Guid> AddUserAsync(User user);  
 
-        Task UpdateUser(User user);
+        Task<bool> UpdateUserAsync(User user);
 
-        Task DeleteUser(Guid userId);
+        Task<bool> DeleteUserAsync(Guid userId);
 
     }
 }
