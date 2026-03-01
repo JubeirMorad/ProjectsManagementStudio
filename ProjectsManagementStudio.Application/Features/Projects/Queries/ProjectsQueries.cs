@@ -3,7 +3,7 @@ using ProjectsManagementStudio.Domain;
 
 namespace ProjectsManagementStudio.Application.Features
 {
-    public record GetProjectQuery
+    public record GetProjectByIdQuery
     (
         Guid Id
     );
