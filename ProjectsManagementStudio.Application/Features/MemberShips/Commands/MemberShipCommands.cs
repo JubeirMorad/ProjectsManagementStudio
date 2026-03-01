@@ -7,15 +7,23 @@ namespace ProjectsManagementStudio.Application.Features
 {
     public record CreateMemberShipCommand
     (
-        Guid UserId,
         Guid ProjectId,
+        Guid UserId,
         ProjectRole Role
     );
 
-    public record UpdateMemberShipCommand
+    public record UpdateMemberShipUserCommand
     (
-        Guid Id,
-        Guid UserId
+        Guid ProjectId,
+        Guid UserId,
+        Guid newUserId
+    );
+
+    public record UpdateMemberShipProjectCommand
+    (
+        Guid ProjectId,
+        Guid UserId,
+        ProjectRole newRole
     );
 
     public record DeleteMemberShipCommand
@@ -23,4 +31,5 @@ namespace ProjectsManagementStudio.Application.Features
         Guid ProjectId,
         Guid UserId
     );
+
 }

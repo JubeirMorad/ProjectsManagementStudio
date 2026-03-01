@@ -15,8 +15,8 @@ namespace ProjectsManagementStudio.Application.Persistence
         //
         //
         // Commands
-        Task<Guid> AddProjectAsync(); // return new project id
-        Task<bool> UpdateProjectAsync(Guid Id);
+        Task<Guid> AddProjectAsync(Project project); // return new project id
+        Task<bool> UpdateProjectAsync(Project project);
         Task<bool> DeleteProjectAsync(Guid Id);
     }
 }

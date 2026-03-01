@@ -14,9 +14,9 @@ namespace ProjectsManagementStudio.Application.Persistence
         //
         //
         // Commands
-        Task<bool> UpdateMemberShipAsync(Guid ProjectId, Guid UserId);
+        Task<bool> UpdateMemberShipAsync(MemberShip memberShip);
         Task<bool> DeleteMemberShipAsync(Guid ProjectId, Guid UserId);
-        Task AddMemberShipAsync(Guid ProjectId, Guid UserId);
+        Task AddMemberShipAsync(MemberShip memberShip);
         
     }
 }
