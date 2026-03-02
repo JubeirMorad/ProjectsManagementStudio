@@ -1,5 +1,4 @@
 
-using ProjectsManagementStudio.Application.Features;
 using ProjectsManagementStudio.Domain;
 
 namespace ProjectsManagementStudio.Application.Persistence
@@ -28,7 +27,9 @@ namespace ProjectsManagementStudio.Application.Persistence
 
         Task<bool> UpdateUserAsync(User user);
 
-        Task<bool> DeleteUserAsync(Guid userId);
+        Task<bool> DeleteUserAsync(User user);
+
+
 
     }
 }
