@@ -20,8 +20,8 @@ namespace ProjectsManagementStudio.Application.Persistence
         //
         // Commands
         Task<Guid> AddTaskAsync(TaskItem newTaskItem);
-        Task<bool> UpdateTaskAsync(TaskItem taskItem);
-        Task<bool> DeleteTaskAsync(Guid Id);
+        Task UpdateTaskAsync(TaskItem taskItem);
+        Task DeleteTaskAsync(TaskItem taskItem);
 
     }
 }

@@ -25,9 +25,9 @@ namespace ProjectsManagementStudio.Application.Persistence
         // Commands //
         Task<Guid> AddUserAsync(User user);  
 
-        Task<bool> UpdateUserAsync(User user);
+        Task UpdateUserAsync(User user);
 
-        Task<bool> DeleteUserAsync(User user);
+        Task DeleteUserAsync(User user);
 
 
 
