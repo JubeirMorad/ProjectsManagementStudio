@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProjectsManagementStudio.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eb299b4c41f54f726bc61cbd3769363f43f3fced")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0511c4f7d4632930e9ebc6ce37ef71a7eafad998")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProjectsManagementStudio.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProjectsManagementStudio.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

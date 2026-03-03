@@ -1,8 +1,5 @@
-using System;
-using System.Collections.Generic;
+
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
 using ProjectsManagementStudio.Domain;
 
 namespace ProjectsManagementStudio.Application.Features
@@ -18,7 +15,7 @@ namespace ProjectsManagementStudio.Application.Features
 
 
 
-    public record RegirsterUserCommand
+    public record RegisterUserCommand
     (
         [MaxLength(50, ErrorMessage = "Name length cannot be > 50")]
         string Name,
@@ -27,7 +24,7 @@ namespace ProjectsManagementStudio.Application.Features
         string Email,
 
         [MaxLength(255)]
-        string PasswordHash
+        string Password
     );
 
 

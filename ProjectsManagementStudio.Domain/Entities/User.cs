@@ -19,11 +19,11 @@ public class User
 
 
     [Required]
-    public UserRole Role { get; private set; } = UserRole.User;
+    public UserRole Role { get; set; } = UserRole.User;
 
 
     [Required, Column(TypeName = "nvarchar(255)")]
-    public string PasswordHash { get; private set; }
+    public string PasswordHash { get; set; }
 
     //
     public ICollection<TaskItem>? AssignedTasks { get; private set; } = new HashSet<TaskItem>();
