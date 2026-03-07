@@ -1,5 +1,6 @@
 
 using System.ComponentModel.DataAnnotations;
+using System.Net.Mail;
 using ProjectsManagementStudio.Domain;
 
 namespace ProjectsManagementStudio.Application.Features
@@ -9,10 +10,11 @@ namespace ProjectsManagementStudio.Application.Features
         [MaxLength(255, ErrorMessage =  "Email length cannot be > 255")]
         string Email,
 
-        [StringLength(255, MinimumLength = 6, ErrorMessage = "Password length must be between 6 and 255 characters.")]
+        [StringLength(10, MinimumLength = 6, ErrorMessage = "Password length must be between 6 and 10 characters.")]
         string Password
     );
 
+    public record LogoutUserCommand();
 
 
     public record RegisterUserCommand
@@ -20,10 +22,10 @@ namespace ProjectsManagementStudio.Application.Features
         [MaxLength(50, ErrorMessage = "Name length cannot be > 50")]
         string Name,
 
-        [MaxLength(255, ErrorMessage =  "Email length cannot be > 255")]
+        [MaxLength(255, ErrorMessage = "Email length cannot be > 255"), EmailAddress(ErrorMessage = "Invalid email format.")]
         string Email,
 
-        [MaxLength(255)]
+        [MaxLength(10,ErrorMessage = "Password length must be between 6 and 10 characters.")]
         string Password
     );
 
@@ -35,7 +37,7 @@ namespace ProjectsManagementStudio.Application.Features
         Guid Id,
 
         [MaxLength(50, ErrorMessage = "Name length cannot be > 50")]
-        string Name
+        string NewName
     );
 
 
@@ -64,7 +66,10 @@ namespace ProjectsManagementStudio.Application.Features
         [Required]
         Guid Id,
 
-        [StringLength(255, MinimumLength = 6, ErrorMessage = "Password length must be between 6 and 255 characters.")]
+        [Required]
+        string CurrentPassword,
+
+        [StringLength(10, MinimumLength = 6, ErrorMessage = "Password length must be between 6 and 10 characters.")]
         string NewPassword
     );
 
@@ -75,11 +80,11 @@ namespace ProjectsManagementStudio.Application.Features
         [Required]
         Guid Id,
 
-        [MaxLength(255, ErrorMessage =  "Email length cannot be > 255")]
+        [MaxLength(255, ErrorMessage =  "Email length cannot be > 255"),EmailAddress(ErrorMessage = "Invalid email format.")]
         string NewEmail
     );
 
-
+    
     
     
 }
