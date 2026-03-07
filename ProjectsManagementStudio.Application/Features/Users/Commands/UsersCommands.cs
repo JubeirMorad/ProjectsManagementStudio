@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Net.Mail;
 using ProjectsManagementStudio.Domain;
 
-namespace ProjectsManagementStudio.Application.Features
+namespace ProjectsManagementStudio.Application.Features.Users.Commands
 {
 
     public record LoginUserCommand(

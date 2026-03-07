@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using ProjectsManagementStudio.Domain;
 
-namespace ProjectsManagementStudio.Application.Features
+namespace ProjectsManagementStudio.Application.Features.Users.Queries
 { 
     public record GetUserByIdQuery
     (
@@ -16,13 +16,13 @@ namespace ProjectsManagementStudio.Application.Features
     public record GetUserByEmailQuery
     (
         [Required]
-        [MaxLength(255, ErrorMessage =  "Email length cannot be > 255")]
+        [MaxLength(255, ErrorMessage =  "Email length cannot be > 255"), EmailAddress(ErrorMessage = "Invalid email format.")]
         string Email
     );
 
 
 
-    public record GetUserByRoleQuery
+    public record GetUsersByRoleQuery
     (
         [Required]
         UserRole Role

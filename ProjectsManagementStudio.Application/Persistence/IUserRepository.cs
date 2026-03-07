@@ -12,9 +12,9 @@ namespace ProjectsManagementStudio.Application.Persistence
 
         Task<User?> GetUserByIdAsync(Guid id, bool WithTasks = false);
 
-        Task<User?> GetUserByRoleAsync(UserRole role, bool WithTasks = false);
+        Task<IEnumerable<User>?> GetUsersByRoleAsync(UserRole role);
 
-        Task<IEnumerable<User>?> GetUsersByTaskIdAsync(Guid taskId);
+        Task<User?> GetUserByTaskIdAsync(Guid taskId);
 
         Task<User?> GetUserByEmailAsync(string email, bool WithTasks = false);
 

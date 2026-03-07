@@ -3,7 +3,7 @@ using System.Linq.Expressions;
 using ProjectsManagementStudio.Application.Persistence;
 using ProjectsManagementStudio.Domain;
 
-namespace ProjectsManagementStudio.Application.Features
+namespace ProjectsManagementStudio.Application.Features.Users.Commands
 {
     public class LoginUserCommandHandler
     {

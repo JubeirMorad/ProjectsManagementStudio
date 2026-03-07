@@ -8,35 +8,10 @@ namespace ProjectsManagementStudio.Application.Features
         Guid Id,
         string Name,
         string Email,
-        UserRole Role
-    );
-
-    public record UserWithTaskResponse
-    (
-        Guid Id,
-        string Name,
-        string Email,
         UserRole Role,
-        IEnumerable<TaskItem> Tasks
+        IEnumerable<TaskItem>? Tasks,
+        IEnumerable<Project>? Projects
     );
 
-    public record UserWithProjectsResponse
-    (
-        Guid Id,
-        string Name,
-        string Email,
-        UserRole Role,
-        IEnumerable<Project> Projects
-    );
-
-
-    public record UserWithAllDetailsResponse
-    (
-        Guid Id,
-        string Name,
-        string Email,
-        UserRole Role,
-        IEnumerable<TaskItem> Tasks,
-        IEnumerable<Project> Projects
-    );
+    
 }
