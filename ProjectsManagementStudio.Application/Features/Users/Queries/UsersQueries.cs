@@ -7,7 +7,6 @@ namespace ProjectsManagementStudio.Application.Features.Users.Queries
 { 
     public record GetUserByIdQuery
     (
-        [Required]
         Guid Id
     );
 
@@ -15,8 +14,6 @@ namespace ProjectsManagementStudio.Application.Features.Users.Queries
 
     public record GetUserByEmailQuery
     (
-        [Required]
-        [MaxLength(255, ErrorMessage =  "Email length cannot be > 255"), EmailAddress(ErrorMessage = "Invalid email format.")]
         string Email
     );
 
@@ -24,7 +21,6 @@ namespace ProjectsManagementStudio.Application.Features.Users.Queries
 
     public record GetUsersByRoleQuery
     (
-        [Required]
         UserRole Role
     );
 
