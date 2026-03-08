@@ -19,9 +19,6 @@ namespace ProjectsManagementStudio.Application.Features.Users.Commands
             string PasswordHash = _passwordHasher.HashPassword(command.Password);
 
             User newUser = new (command.Name, command.Email ,PasswordHash);
-
-            // Check if email is already taken
-            // send token, cookie, etc for authentication
             
             return await _userRepo.AddUserAsync(newUser);
         }
