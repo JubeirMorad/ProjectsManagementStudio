@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using FluentValidation;
 
-namespace ProjectsManagementStudio.Application.Features.Projects.Commands.UpdateProjectDescription
+namespace ProjectsManagementStudio.Application.Features.Projects.Commands
 {
     public class UpdateProjectDescriptionCommandValidator : AbstractValidator<UpdateProjectDescriptionCommand>
     {

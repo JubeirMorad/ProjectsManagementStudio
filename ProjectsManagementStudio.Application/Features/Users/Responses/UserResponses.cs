@@ -8,9 +8,7 @@ namespace ProjectsManagementStudio.Application.Features
         Guid Id,
         string Name,
         string Email,
-        UserRole Role,
-        IEnumerable<TaskItem>? Tasks,
-        IEnumerable<Project>? Projects
+        UserRole Role
     );
 
     

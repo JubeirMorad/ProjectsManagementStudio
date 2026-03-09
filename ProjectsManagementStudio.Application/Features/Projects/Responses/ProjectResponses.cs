@@ -12,9 +12,7 @@ namespace ProjectsManagementStudio.Application.Features
         string Description,
         DateTime StartDate,
         DateTime? EndDate,
-        ProjectStatus Status,
-        IEnumerable<MemberShipResponse>? MemberShips,
-        IEnumerable<TaskResponse>? Tasks
+        ProjectStatus Status
     );
 
 

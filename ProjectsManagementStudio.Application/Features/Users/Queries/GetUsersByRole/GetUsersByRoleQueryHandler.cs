@@ -25,9 +25,7 @@ namespace ProjectsManagementStudio.Application.Features.Users.Commands
                 u.Id,
                 u.Name,
                 u.Email,
-                u.Role,
-                null,
-                null
+                u.Role
             )).ToList();
         }
     }

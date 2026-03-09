@@ -24,9 +24,7 @@ namespace ProjectsManagementStudio.Application.Features.Users.Queries
                 u.Id,
                 u.Name,
                 u.Email,
-                u.Role,
-                null,
-                null
+                u.Role
             )).ToList();
         }
     }

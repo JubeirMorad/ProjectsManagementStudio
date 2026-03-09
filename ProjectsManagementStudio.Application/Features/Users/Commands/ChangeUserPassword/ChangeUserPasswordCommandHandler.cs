@@ -23,14 +23,13 @@ namespace ProjectsManagementStudio.Application.Features.Users.Commands
             {
 
                 if (!_passwordHasher.Verfiy(command.CurrentPassword, user.PasswordHash))
-                    return; // return Result later
+                    throw new ArgumentException("Current password was wrong.");
 
                 var newPasswordHash = _passwordHasher.HashPassword(command.NewPassword);
 
                 user.PasswordHash = newPasswordHash;
 
                 await _userRepo.UpdateUserAsync(user);
-                return; // return Result later
                 
             }
             else throw new KeyNotFoundException($"User with id {command.Id} was not found!");
