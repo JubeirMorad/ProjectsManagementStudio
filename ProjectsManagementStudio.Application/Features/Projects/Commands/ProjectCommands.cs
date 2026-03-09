@@ -7,10 +7,8 @@ namespace ProjectsManagementStudio.Application.Features
 {
     public record CreateProjectCommand
     (
-        [MaxLength(50, ErrorMessage = "Project name cannot exceed 50 characters.")]
         string Name,
 
-        [MaxLength(255, ErrorMessage = "Project description cannot exceed 255 characters.")]
         string Description
     );
 
@@ -18,17 +16,12 @@ namespace ProjectsManagementStudio.Application.Features
     (
         Guid Id,
 
-        [MaxLength(50, ErrorMessage = "Project name cannot exceed 50 characters.")]
-        string Name,
-
-        [MaxLength(255, ErrorMessage = "Project description cannot exceed 255 characters.")]
-        string Description
+        string Name
     );
 
     public record UpdateProjectDescriptionCommand
     (
         Guid Id,
-        [MaxLength(255, ErrorMessage = "Project description cannot exceed 255 characters.")]
         string Description
     );
 

@@ -1,10 +1,20 @@
 {
   "version": 2,
-  "dgSpecHash": "qCY5gwilJz4=",
+  "dgSpecHash": "6Ff1j2r+HfI=",
   "success": true,
   "projectFilePath": "D:\\Programming\\Projects\\ProjectsManagementStudio\\ProjectsManagementStudio.Application\\ProjectsManagementStudio.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DELL\\.nuget\\packages\\fluentvalidation\\12.1.1\\fluentvalidation.12.1.1.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.",
+      "projectPath": "D:\\Programming\\Projects\\ProjectsManagementStudio\\ProjectsManagementStudio.Application\\ProjectsManagementStudio.Application.csproj",
+      "warningLevel": 1,
+      "filePath": "D:\\Programming\\Projects\\ProjectsManagementStudio\\ProjectsManagementStudio.Application\\ProjectsManagementStudio.Application.csproj",
+      "targetGraphs": []
+    }
+  ]
 }

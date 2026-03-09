@@ -3709,8 +3709,8 @@
     },
     "ProjectsManagementStudio.Domain/1.0.0": {
       "type": "project",
-      "path": "../ProjectsManagementStudio.Domain/ProjectsManagementStudio.Domain.csproj",
-      "msbuildProject": "../ProjectsManagementStudio.Domain/ProjectsManagementStudio.Domain.csproj"
+      "path": "../projectsmanagementstudio.Domain/ProjectsManagementStudio.Domain.csproj",
+      "msbuildProject": "../projectsmanagementstudio.Domain/ProjectsManagementStudio.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -3759,8 +3759,8 @@
             "D:\\Programming\\Projects\\ProjectsManagementStudio\\ProjectsManagementStudio.Application\\ProjectsManagementStudio.Application.csproj": {
               "projectPath": "D:\\Programming\\Projects\\ProjectsManagementStudio\\ProjectsManagementStudio.Application\\ProjectsManagementStudio.Application.csproj"
             },
-            "D:\\Programming\\Projects\\ProjectsManagementStudio\\ProjectsManagementStudio.Domain\\ProjectsManagementStudio.Domain.csproj": {
-              "projectPath": "D:\\Programming\\Projects\\ProjectsManagementStudio\\ProjectsManagementStudio.Domain\\ProjectsManagementStudio.Domain.csproj"
+            "D:\\Programming\\Projects\\ProjectsManagementStudio\\projectsmanagementstudio.Domain\\ProjectsManagementStudio.Domain.csproj": {
+              "projectPath": "D:\\Programming\\Projects\\ProjectsManagementStudio\\projectsmanagementstudio.Domain\\ProjectsManagementStudio.Domain.csproj"
             }
           }
         }
@@ -4095,5 +4095,13 @@
         }
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json."
+    }
+  ]
 }

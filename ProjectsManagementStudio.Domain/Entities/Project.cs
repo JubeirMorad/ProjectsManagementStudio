@@ -10,11 +10,11 @@ public class Project
 
 
     [Required, MaxLength(50)]
-    public string Name { get; private set; }
+    public string Name { get; set; }
 
 
     [Required, MaxLength(300)]
-    public string Description { get; private set; }
+    public string Description { get; set; }
 
     //
     [Required]
@@ -48,9 +48,21 @@ public class Project
         this.Id = Guid.NewGuid();
         this.Name = name;
         this.Description = description;
-        this.StartDate = DateTime.Now;
+        this.StartDate = DateTime.UtcNow;
         this.Status = ProjectStatus.New;
     }
 
-
+    public void SetStatusInProgress()
+    {
+        if (this.Status == ProjectStatus.New)
+            this.Status = ProjectStatus.InProgress;
+    }
+    public void SetStatusCompleted()
+    {
+        if (this.Status == ProjectStatus.InProgress)
+        {
+            this.Status = ProjectStatus.Completed;
+            this.EndDate = DateTime.UtcNow;
+        }
+    }
 }
