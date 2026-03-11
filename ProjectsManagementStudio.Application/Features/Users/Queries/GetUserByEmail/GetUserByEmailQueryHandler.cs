@@ -12,7 +12,7 @@ namespace ProjectsManagementStudio.Application.Features.Users.Queries
         }
 
 
-        public async Task<UserResponse> Handle(GetUserByEmailQuery query, bool withTasks = false, bool withProjects = false)
+        public async Task<UserResponse> Handle(GetUserByEmailQuery query)
         {
             var user = await _userRepository.GetUserByEmailAsync(query.Email);
 
@@ -21,7 +21,7 @@ namespace ProjectsManagementStudio.Application.Features.Users.Queries
                 throw new KeyNotFoundException($"User with Email {query.Email} not found.");
             }
 
-            return new UserResponse
+            return new 
             (
                 Id: user.Id,
                 Name: user.Name,

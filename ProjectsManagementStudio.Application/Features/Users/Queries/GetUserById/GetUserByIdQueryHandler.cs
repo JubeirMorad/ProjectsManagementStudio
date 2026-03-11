@@ -1,5 +1,5 @@
 
-using ProjectsManagementStudio.Application.Features.Projects.Queries.GetProjectById;
+using ProjectsManagementStudio.Application.Features.Projects.Queries;
 using ProjectsManagementStudio.Application.Persistence;
 using ProjectsManagementStudio.Domain;
 
