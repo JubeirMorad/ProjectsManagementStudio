@@ -57,6 +57,7 @@ public class Project
         if (this.Status == ProjectStatus.New)
             this.Status = ProjectStatus.InProgress;
     }
+    
     public void SetStatusCompleted()
     {
         if (this.Status == ProjectStatus.InProgress)

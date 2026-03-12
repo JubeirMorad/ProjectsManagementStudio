@@ -6,13 +6,11 @@ namespace ProjectsManagementStudio.Application.Features
 
     public record CreateTaskCommand
     (
-        [MaxLength(50, ErrorMessage = "Title length cannot be > 50")]
         string Title,
         
-        [MaxLength(255, ErrorMessage = "Description length cannot be > 255")]
         string Description,
 
-        Guid AssignedToUserId,
+        Guid? AssignedToUserId,
         Guid ProjectId
     );
 
@@ -42,7 +40,6 @@ namespace ProjectsManagementStudio.Application.Features
     (
         Guid TaskId,
 
-        [MaxLength(50, ErrorMessage = "Title length cannot be > 50")]
         string NewTitle
     );
 
@@ -50,8 +47,6 @@ namespace ProjectsManagementStudio.Application.Features
     public record ChangeTaskDescriptionCommand
     (
         Guid TaskId,
-
-        [MaxLength(255, ErrorMessage = "Description length cannot be > 255")]
         string NewDescription
     );
 

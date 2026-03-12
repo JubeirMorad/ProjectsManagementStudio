@@ -9,12 +9,12 @@ public class TaskItem
     public Guid Id { get; private set; }
 
 
-    [Required, MaxLength(50 , ErrorMessage = "Name length cannot be > 50.")]
-    public string Title { get; private set; }
+    [Required, MaxLength(50)]
+    public string Title { get; set; }
 
 
-    [Required, MaxLength(300, ErrorMessage = "Description length cannot be > 300.")]
-    public string Description { get; private set; }
+    [Required, MaxLength(300)]
+    public string Description { get; set; }
 
 
     //
@@ -24,20 +24,20 @@ public class TaskItem
 
     //
     [ForeignKey(nameof(AssignedToUser))]
-    public Guid? AssignedToUserId { get; private set; }
+    public Guid? AssignedToUserId { get;  set; }
     public User? AssignedToUser { get; private set; }
 
 
     //
     [ForeignKey(nameof(Project))]
-    public Guid ProjectId { get; private set; }
+    public Guid ProjectId { get; set; }
     public Project Project { get; private set; }
 
 
     private TaskItem() { } // for EF Core
 
 
-    public TaskItem(string title, string description, Guid assignedToUserId, Guid projectId)
+    public TaskItem(string title, string description, Guid? assignedToUserId, Guid projectId)
     {
         if (string.IsNullOrWhiteSpace(title))
             throw new ArgumentException("Title cannot be empty.", nameof(title));
@@ -61,5 +61,14 @@ public class TaskItem
 
     }
 
-
+    public void SetStatusDone()
+    {
+        if (this.Status == TaskItemStatus.InProgress)
+            this.Status = TaskItemStatus.Done;
+    }
+    public void SetStatusInProgress()
+    {
+        if (this.Status == TaskItemStatus.ToDo)
+            this.Status = TaskItemStatus.InProgress;
+    }
 }
