@@ -9,7 +9,5 @@ namespace ProjectsManagementStudio.Application.Features
         string Name,
         string Email,
         UserRole Role
-    );
-
-    
+    );    
 }

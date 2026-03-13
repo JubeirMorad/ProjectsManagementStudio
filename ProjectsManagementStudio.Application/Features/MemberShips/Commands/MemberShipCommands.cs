@@ -12,14 +12,8 @@ namespace ProjectsManagementStudio.Application.Features
         ProjectRole Role
     );
 
-    public record UpdateMemberShipUserCommand
-    (
-        Guid ProjectId,
-        Guid UserId,
-        Guid newUserId
-    );
 
-    public record UpdateMemberShipProjectCommand
+    public record UpdateMemberShipRoleCommand
     (
         Guid ProjectId,
         Guid UserId,
