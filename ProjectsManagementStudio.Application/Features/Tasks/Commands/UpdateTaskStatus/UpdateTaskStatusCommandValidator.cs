@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using FluentValidation;
 
-namespace ProjectsManagementStudio.Application.Features.Tasks.Commands.UpdateTaskStatus
+namespace ProjectsManagementStudio.Application.Features.Tasks.Commands
 {
     public class UpdateTaskStatusCommandValidator : AbstractValidator<UpdateTaskStatusCommand>
     {

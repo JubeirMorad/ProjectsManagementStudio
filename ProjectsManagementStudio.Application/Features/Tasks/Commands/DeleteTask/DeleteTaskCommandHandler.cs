@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using ProjectsManagementStudio.Application.Persistence;
 
-namespace ProjectsManagementStudio.Application.Features.Tasks.Commands.DeleteTask
+namespace ProjectsManagementStudio.Application.Features.Tasks.Commands
 {
     public class DeleteTaskCommandHandler
     {

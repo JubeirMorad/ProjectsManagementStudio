@@ -12,7 +12,7 @@ namespace ProjectsManagementStudio.Application.Persistence
         Task<TaskItem?> GetTaskByIdAsync(Guid id);
         Task<IEnumerable<TaskItem>?> GetTasksByProjectIdAsync(Guid projectId);
         Task<IEnumerable<TaskItem>?> GetTasksByAssignedUserIdAsync(Guid userId);
-        Task<IEnumerable<TaskItem>?> GetTasksByStatusAsync(Guid userId);
+        Task<IEnumerable<TaskItem>?> GetTasksByStatusAsync(TaskItemStatus status);
         Task<IEnumerable<TaskItem>?> GetTasksByProjectIdAndStatusAsync(Guid ProjectId, TaskItemStatus status);
         Task<IEnumerable<TaskItem>?> GetTasksByUserIdAndStatusAsync(Guid UserId, TaskStatus status);
 
