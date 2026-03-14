@@ -1,7 +1,7 @@
 
 using FluentValidation;
 
-namespace ProjectsManagementStudio.Application.Features.MemberShips.Commands.UpdateMemberShipUser
+namespace ProjectsManagementStudio.Application.Features.MemberShips.Commands
 {
     public class UpdateMemberShipUserCommandValidator : AbstractValidator<UpdateMemberShipRoleCommand>
     {

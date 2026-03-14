@@ -15,6 +15,10 @@ namespace ProjectsManagementStudio.Application.Features.MemberShips.Commands
         {
             var member = await _membershipRepo.GetMemberShipByUserAndProjectAsync(command.UserId, command.ProjectId);
 
+            if (member is null)
+                throw new KeyNotFoundException($"Membership with user id {command.UserId} and project id {command.ProjectId}");
+
+
             if (member.Role == command.newRole)
                 return;
 
